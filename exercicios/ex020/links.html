@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*para tirar o sublinhado do link*/
+            font-weight: bold; /*Para ficar texto em negrito*/
+        }
+
+        a:visited{ /*pseudoclass-se clicar no link vai acntecer alguma coisa*/
+            color: rgb(138, 8, 8); /*Neste caso se clicar num link a cor vai ficar vermelho escuro para saber que ja cliquei nesse link futuramente*/
+        }
+
+        a:hover{
+            text-decoration: underline; /*pseudoclass-se passar o rato por cima do link o texto fica sublinhado*/
+            color: black; /*se passar o rato por cima o texto vai ficar preto*/
+        }
+
+        a::after{ /*Pseudo elemento-depois de todos os links*/
+            content: '[link]'; /*Eu escrevi LINK para avisar as pessoas que é um link*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizar links</h1>
+    <ul>
+        <li><a href="https://www.google.pt/" target="_blank">google</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">youtube</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+    </ul>
+</body>
+</html>

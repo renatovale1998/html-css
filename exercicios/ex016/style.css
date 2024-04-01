@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #4FB99F, #068587);
+}
+main{
+    background-color: white;
+    width: 600px; /*Largura da caixa*/
+    border-radius: 10px; /*Deixar as pontas da minha caixa arredondadas*/
+    box-shadow: 5px 5px 15px #112F41; /*ADICIONAR SOMBRA A CAIXA*/
+    padding: 10px; /*Para deixar um espaço lateral para as letras não baterem na caixa branca*/
+    margin: auto; /*Vai centrar no ecrã independentemente do tamanho do ecrã*/
+}
+
+h1{
+    color: #ED553B;
+    text-align: center; /*Centrar o meu titulo h1 no meio*/
+    text-shadow: 1px 1px 2px #112F41; /*ADICIONAR SOMBRA AO TEXTO*/
+
+}
+
+h2{
+    color: #F2B134;
+}
+
+p{
+    text-align: justify;
+}

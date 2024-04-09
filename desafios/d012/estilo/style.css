@@ -32,7 +32,7 @@ header > h1{
     /* (text-transform: uppercase;) Para meter o texto todo em letras maiusculas*/
     font-variant: small-caps; /*para meter o texto com leras maiusculas mas a 1 letra incial é maior*/
     font-family: var(--fonte02);
-    font-size: 4vh;
+    font-size: 10vh;
 }
 
 header > p{
@@ -58,6 +58,10 @@ section{
     font-size: 3.5vh;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -66,12 +70,25 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.356);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block; /*a vantagem que tem e que assim a caixa vai se adaptar a largura do texto--mas não posso meter a tag with pois automaticamente with ira se sobrepor a tag inline-block*/
     background-color: rgba(0, 0, 0, 0.514);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer{

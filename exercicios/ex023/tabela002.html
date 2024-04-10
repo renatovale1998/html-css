@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        table{
+          border-collapse: collapse;
+          width: 500px;
+          }
+
+          th, td{
+            border: 1px solid black;
+            padding: 10px;
+          }
+
+          thead, tfoot{
+            background-color: darkgray;
+            color: white;
+          }
+
+          .numero{
+            text-align: right;
+          }
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--ANATOMIA PARA TABELAS GRANDES
+
+        TABLE
+            CAPITION (GENERO DE LEGENDA DO CABEÇALHO) - DENTRO DA TAG APENAS SE ESCREVE TEXTO.
+            THEAD DA TABELA
+                TR (TD, TH)
+            TBODY DA TABELA (BASICAMNETE EU NÃO PRECISO DE TER CABEÇA NEM RODAPE MAS É UMA QUESTÃO DE ORGANIZAR)
+                TR (TD, TH)
+            TFOOT DA TABELA
+                TR (TD, TH)
+
+            ----
+            th - titulo
+            td - dado (numeros)
+        --> 
+
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 90px;">População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numero">45 919 849</td>
+                </tr>
+
+                <tr>
+                    <td>Minas gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17 264 943</td>
+                </tr>
+
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14 141 626</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11 444 380</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td class="numero"><strong>109 939 589</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+       
+</body>
+</html>

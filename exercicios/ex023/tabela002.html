@@ -10,7 +10,14 @@
         table{
           border-collapse: collapse;
           width: 500px;
+          position: relative;
           }
+
+        thead > tr > th{
+            position: sticky; 
+            top: 0;
+            background-color: darkgray;
+        }
 
           th, td{
             border: 1px solid black;
@@ -24,6 +31,10 @@
 
           .numero{
             text-align: right;
+          }
+
+          tbody > tr:nth-child(2n){                /*se meter so (2) só vai fazer background color na linha (2)*/
+            background-color: rgb(96, 190, 42); /*mas se meter (2n) vai fazer background color de 2 em 2 colunas*/
           }
 
     </style>
@@ -80,6 +91,56 @@
 
                 <tr>
                     <td>Paraná</td>
+                    <td class="numero">11 444 380</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numero">45 919 849</td>
+                </tr>
+
+                <tr>
+                    <td>Permanbuco</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+
+                <tr>
+                    <td>Ceará</td>
+                    <td class="numero">17 264 943</td>
+                </tr>
+
+                <tr>
+                    <td>Pará</td>
+                    <td class="numero">14 141 626</td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="numero">11 444 380</td>
+                </tr>
+
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="numero">45 919 849</td>
+                </tr>
+
+                <tr>
+                    <td>Goias</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+
+                <tr>
+                    <td>Amazônia</td>
+                    <td class="numero">17 264 943</td>
+                </tr>
+
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td class="numero">14 141 626</td>
+                </tr>
+
+                <tr>
+                    <td>Parabá</td>
                     <td class="numero">11 444 380</td>
                 </tr>
 

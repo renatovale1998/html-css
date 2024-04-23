@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe002</title>
+
+    <style>
+        .tela{
+            width: 95vh;
+            height: 400px;
+            border: 2px solid blacke;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Teste com iframe</h1>
 
-    <p>Para fazer um iframe de uma pagina do meu site apeno tenho <br> que adicionar a tag iframe e depois fazer CTRL + ESPACO para ir buscar a pagina que quero que apareca</p>
+    <p>Aqui vou ter o iframe em que possa abrir tres paginas diferentes do meu site no mesmo iframe</p>
+    <p>Clique numa pagina para abrir o iframe dessa mesma pagina</p>
 
-    <iframe src="pag001iframe.html" frameborder="0"></iframe>
-</body>
+    <nav>
+        <a href="paginasextras/pag001iframe.html" target="iframe">pag001</a>
+        <a href="paginasextras/pag002iframe.html" target="iframe">pag002</a>
+        <a href="paginasextras/pag003iframe.html" target="iframe">pag003</a>
+    </nav>
+
+    <iframe class="tela" src="" name="iframe">
+        <p>Se seu navegador nao abrir o iframe é porque nao é compativel</p>
+    </iframe>
+
 </html>

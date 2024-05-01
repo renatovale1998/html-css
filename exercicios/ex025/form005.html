@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> <!--Para criar a divisão para estas 3 caixas (Neste caso incorporei 3 mas podia ter posto menos ou mais)-->
+            <legend>Dados pessoais</legend> <!--Para criar uma legenda para esta divisão destas 3 caixas-->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="30">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^[0-9]{9}$" placeholder="911529333">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros dados</legend>
+            <label for="icidade">Cidade</label>
+            <input type="text" name="cidade" id="icidade" required minlength="5" maxlength="15">
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Anular">
+        </p>
+        
+    </form>

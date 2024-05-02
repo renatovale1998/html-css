@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="icid">Cidade:</label>
+            <select name="cid" id="icid">
+
+                <option value="esc" selected>--Escolha--</option>
+
+                <optgroup label="Região Norte">
+                    <option value="bra">Braga</option>
+                    <option value="via">Viana do castelo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="lis">Lisboa</option>
+                    <option value="coi">Coimbra</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="dataprof">
+
+            <datalist id="dataprof">
+                <option>Administrador</option>
+                <option>Pintor</option>
+                <option>Pescador</option>
+                <option>Jogador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imen">Mensagem:</label> <br>
+            <textarea name="men" id="imen" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Anular">
+        </p>
+    </form>
+
+</body>
+</html>
